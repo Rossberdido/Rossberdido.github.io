@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosebert Pascual - IT Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* For custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111827;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4b5563;
+        }
+        .animate-on-scroll {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300 font-sans leading-relaxed">
+
+    <div class="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+
+            <!-- Left Sticky Column -->
+            <header class="lg:col-span-1 lg:sticky lg:top-8 h-full lg:max-h-screen flex flex-col space-y-8">
+                <div class="flex flex-col text-center lg:text-left">
+                     <h1 class="text-4xl font-bold text-white tracking-tight">Rosebert Pascual</h1>
+                     <h2 class="mt-3 text-lg font-medium text-gray-300 tracking-wide">Senior IT Professional</h2>
+                     <p class="mt-4 text-gray-400 max-w-xs mx-auto lg:mx-0">
+                         15+ years of experience in IT administration, system support, and infrastructure management.
+                     </p>
+                </div>
+
+                <nav class="hidden lg:block">
+                     <ul class="space-y-2">
+                         <li><a href="#about" class="group flex items-center py-2">
+                             <span class="nav-indicator mr-4 h-px w-8 bg-gray-600 group-hover:w-16 group-hover:bg-teal-300 transition-all"></span>
+                             <span class="nav-text text-xs font-bold uppercase tracking-widest text-gray-500 group-hover:text-teal-300">About</span>
+                         </a></li>
+                         <li><a href="#experience" class="group flex items-center py-2">
+                             <span class="nav-indicator mr-4 h-px w-8 bg-gray-600 group-hover:w-16 group-hover:bg-teal-300 transition-all"></span>
+                             <span class="nav-text text-xs font-bold uppercase tracking-widest text-gray-500 group-hover:text-teal-300">Experience</span>
+                         </a></li>
+                         <li><a href="#skills" class="group flex items-center py-2">
+                            <span class="nav-indicator mr-4 h-px w-8 bg-gray-600 group-hover:w-16 group-hover:bg-teal-300 transition-all"></span>
+                            <span class="nav-text text-xs font-bold uppercase tracking-widest text-gray-500 group-hover:text-teal-300">Skills</span>
+                        </a></li>
+                     </ul>
+                </nav>
+
+                <div class="flex-grow"></div>
+
+                <div class="flex justify-center lg:justify-start space-x-5 text-gray-400">
+                    <a href="mailto:rosspascual20@gmail.com" class="hover:text-teal-300 transition-colors">
+                        <span class="sr-only">Email</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M.05 6.25A2.25 2.25 0 0 1 2.25 4h19.5A2.25 2.25 0 0 1 24 6.25v11.5A2.25 2.25 0 0 1 21.75 20H2.25A2.25 2.25 0 0 1 .05 17.75V6.25Zm1.5 0v11.5c0 .414.336.75.75.75h19.5a.75.75 0 0 0 .75-.75V6.25a.75.75 0 0 0-.75-.75H2.25a.75.75 0 0 0-.75.75ZM2.75 7.5a.75.75 0 0 0-1.5 0v.13l8.24 4.67a2.25 2.25 0 0 0 2.02 0l8.24-4.67v-.13a.75.75 0 0 0-1.5 0v.01L12 11.87l-8.25-4.36V7.5Z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <!-- Add Github/LinkedIn links here when available -->
+                </div>
+            </header>
+
+            <!-- Right Content Column -->
+            <main class="lg:col-span-2 mt-12 lg:mt-0">
+                <section id="about" class="mb-16 animate-on-scroll">
+                    <h2 class="text-xl font-bold text-white mb-6">About Me</h2>
+                    <p class="text-gray-400">
+                        Highly motivated and detail-oriented IT professional with 15 years of experience in IT administration and support. Adept at managing and maintaining networks, servers, and systems. Skilled in identifying and resolving hardware and software issues across Windows and Linux environments. Familiar with cloud-based technologies and experienced in managing user accounts and permissions. Committed to providing excellent customer service and delivering effective technical solutions to help organizations achieve their business objectives.
+                    </p>
+                </section>
+
+                <section id="experience" class="mb-16 animate-on-scroll">
+                    <h2 class="text-xl font-bold text-white mb-8">Work Experience</h2>
+                    <div class="space-y-12">
+
+                        <div class="group relative grid grid-cols-8 gap-4">
+                            <div class="col-span-2 text-xs font-semibold uppercase tracking-wide text-gray-500 pt-1">Mar 2023 — Nov 2024</div>
+                            <div class="col-span-6">
+                                <h3 class="text-lg font-medium text-white">
+                                    <span class="group-hover:text-teal-300 transition-colors">IT Support Engineer · Ali Bin Ali Holding</span>
+                                </h3>
+                                <p class="mt-2 text-gray-400">Provided comprehensive technical support to end-users for hardware, software, and network issues, diagnosed and resolved PC/printer problems, administered Active Directory accounts, and collaborated with cross-functional teams to implement IT solutions.</p>
+                            </div>
+                        </div>
+
+                        <div class="group relative grid grid-cols-8 gap-4">
+                            <div class="col-span-2 text-xs font-semibold uppercase tracking-wide text-gray-500 pt-1">Oct — Dec 2022</div>
+                            <div class="col-span-6">
+                                <h3 class="text-lg font-medium text-white">
+                                    <span class="group-hover:text-teal-300 transition-colors">IT Support Officer (FIFA) · Ideal Solution Co.</span>
+                                </h3>
+                                <p class="mt-2 text-gray-400">Supported and trained users on POS machines, performed software/hardware installation and configuration for POS terminals, and analyzed technical problems with payment systems during the FIFA World Cup.</p>
+                            </div>
+                        </div>
+
+                        <div class="group relative grid grid-cols-8 gap-4">
+                            <div class="col-span-2 text-xs font-semibold uppercase tracking-wide text-gray-500 pt-1">Jul 2008 — Oct 2022</div>
+                            <div class="col-span-6">
+                                <h3 class="text-lg font-medium text-white">
+                                    <span class="group-hover:text-teal-300 transition-colors">IT Administrator / Sr. System Admin · ECG</span>
+                                </h3>
+                                <p class="mt-2 text-gray-400">Managed virtual servers using VMware, handled backup and recovery with Symantec Backup Exec, managed Cisco switches and IP phones, and led the desktop and helpdesk support efforts for the engineering group.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="skills" class="mb-16 animate-on-scroll">
+                    <h2 class="text-xl font-bold text-white mb-6">Technical Skills</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Windows Server</span>
+                        <span class="skill-badge">Linux</span>
+                        <span class="skill-badge">macOS</span>
+                        <span class="skill-badge">Active Directory</span>
+                        <span class="skill-badge">VMware ESXi</span>
+                        <span class="skill-badge">Hyper-V</span>
+                        <span class="skill-badge">Azure</span>
+                        <span class="skill-badge">Google Cloud</span>
+                        <span class="skill-badge">TCP/IP</span>
+                        <span class="skill-badge">DNS/DHCP</span>
+                        <span class="skill-badge">PowerShell</span>
+                        <span class="skill-badge">Bash</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">SAN/NAS</span>
+                        <span class="skill-badge">Backup Exec</span>
+                    </div>
+                </section>
+
+                <footer class="text-center text-sm text-gray-500 py-8">
+                    <p>Coded with Tailwind CSS. Hosted on GitHub Pages.</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <style>
+        .skill-badge {
+            @apply bg-teal-400/10 text-teal-300 text-sm font-medium px-3 py-1.5 rounded-full;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in-up');
+                        entry.target.classList.remove('opacity-0');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.animate-on-scroll').forEach(section => {
+                section.classList.add('opacity-0');
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+index.htmlindex.html
