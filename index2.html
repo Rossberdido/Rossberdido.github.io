@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosebert Pascual - IT Professional CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            position: relative;
+            overflow-x: hidden;
+            background-image: url('image_6d1b2a.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #ffffff;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #22C55E;
+            border-radius: 9999px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0.25rem;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background-color: #4a4a4a;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 0.25rem;
+            left: 0;
+            width: 1rem;
+            height: 1rem;
+            background-color: #22C55E;
+            border-radius: 50%;
+            border: 2px solid #121212;
+            box-shadow: 0 0 0 3px #4a4a4a;
+        }
+
+        .hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-bg {
+            background-color: rgba(26, 26, 26, 0.8);
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .skill-item {
+            background-color: #2c2c2c;
+            color: #d1d5db;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .skill-item:hover {
+            background-color: #22C55E;
+            color: #ffffff;
+        }
+
+        .social-link {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .social-link:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body class="p-4 md:p-8 lg:p-12">
+    <main class="container mx-auto max-w-5xl space-y-12">
+        <!-- Header Section -->
+        <section class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-12 p-8 card-bg hover-effect">
+            <div class="flex-shrink-0">
+                <img src="https://placehold.co/150x150/1a1a1a/e0e0e0?text=Profile" alt="Rosebert Pascual" class="rounded-full w-40 h-40 object-cover border-4 border-[#22C55E] shadow-lg">
+            </div>
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl sm:text-5xl font-bold text-white mb-2">ROSEBERT PASCUAL</h1>
+                <p class="text-xl text-[#b5b5b5]">IT Administrator / Sr. System Administrator</p>
+                <div class="mt-4 flex flex-wrap justify-center md:justify-start items-center space-x-4 text-sm text-[#d1d5db]">
+                    <a href="https://maps.google.com/?q=Building%20No.%2011%20Abu%20Hayyan%20St.%20Bin%20Mahmoud" target="_blank" class="flex items-center space-x-2 social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#22C55E]" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                        </svg>
+                        <span>Doha, Qatar</span>
+                    </a>
+                    <a href="tel:+97430104558" class="flex items-center space-x-2 social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#22C55E]" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.058 11.058 0 007.92 7.92l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>+974 30104558</span>
+                    </a>
+                    <a href="mailto:rosspascual20@gmail.com" class="flex items-center space-x-2 social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#22C55E]" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        <span>rosspascual20@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Profile Section -->
+        <section class="p-8 card-bg hover-effect">
+            <h2 class="section-title">PROFESSIONAL PROFILE</h2>
+            <p class="text-lg leading-relaxed text-[#c0c0c0]">
+                Highly motivated and detail-oriented IT professional with 15 years of experience, and hands-on experience in IT administration and support has equipped me with the technical knowledge and skills necessary to effectively manage and maintain networks, servers, and systems. I am adept at identifying and resolving hardware and software issues, and have experience with a variety of operating systems, including Windows and Linux. I am also familiar with cloud-based technologies and have experience managing user accounts and permissions. As an IT Administrator and IT Support Engineer, my goal is to use my skills and experience to help organizations improve their IT infrastructure and achieve their business objectives. I am committed to providing excellent customer service and delivering effective solutions to technical problems.
+            </p>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="p-8 card-bg hover-effect">
+            <h2 class="section-title">TECHNICAL SKILLS</h2>
+            <div class="flex flex-wrap gap-4">
+                <span class="skill-item">Windows</span>
+                <span class="skill-item">MacOS</span>
+                <span class="skill-item">Linux</span>
+                <span class="skill-item">TCP/IP</span>
+                <span class="skill-item">DNS</span>
+                <span class="skill-item">DHCP</span>
+                <span class="skill-item">Azure</span>
+                <span class="skill-item">Google Cloud</span>
+                <span class="skill-item">VMware</span>
+                <span class="skill-item">Hyper-V</span>
+                <span class="skill-item">SAN</span>
+                <span class="skill-item">NAS</span>
+                <span class="skill-item">Exchange</span>
+                <span class="skill-item">Gmail</span>
+                <span class="skill-item">Hardware troubleshooting</span>
+                <span class="skill-item">Server hardware</span>
+                <span class="skill-item">Active Directory</span>
+                <span class="skill-item">Backup and disaster recovery</span>
+                <span class="skill-item">PowerShell</span>
+                <span class="skill-item">Bash</span>
+                <span class="skill-item">Python</span>
+                <span class="skill-item">Remote support tools</span>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="p-8 card-bg hover-effect">
+            <h2 class="section-title">EXPERIENCE</h2>
+            <div class="space-y-8 timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-[#2c2c2c] rounded-lg p-6 shadow-md">
+                        <h3 class="text-xl font-bold text-white">IT Support Engineer</h3>
+                        <p class="text-sm text-[#d1d5db]">Ali Bin Ali Holding (Prime Distribution Trading) | Doha, Qatar</p>
+                        <p class="text-xs text-[#9ca3af] mt-1">March 2023 - November 2024</p>
+                        <ul class="list-disc list-inside mt-4 text-[#c0c0c0] space-y-2">
+                            <li>Provided comprehensive technical support to end-users, including hardware and software troubleshooting, network connectivity issues, and system configurations.</li>
+                            <li>Diagnosed and resolved hardware issues, such as PC, printer, and peripheral problems, ensuring minimal downtime for users.</li>
+                            <li>Installed, configured, and maintained software applications, operating systems, and security updates.</li>
+                            <li>Administered user accounts in Active Directory, including password resets and group memberships.</li>
+                            <li>Collaborated with cross-functional teams to resolve complex technical issues and implement IT solutions.</li>
+                            <li>Trained and assisted end-users in adopting new software and technologies to improve productivity.</li>
+                            <li>Created and maintained IT documentation, for hardware inventories, troubleshooting guides, and knowledge base articles.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-[#2c2c2c] rounded-lg p-6 shadow-md">
+                        <h3 class="text-xl font-bold text-white">IT Support Officer</h3>
+                        <p class="text-sm text-[#d1d5db]">Ideal Solution Co. | Doha, Qatar</p>
+                        <p class="text-xs text-[#9ca3af] mt-1">October 2022 - December 2022 (Temporary Contract for FIFA World Cup)</p>
+                        <ul class="list-disc list-inside mt-4 text-[#c0c0c0] space-y-2">
+                            <li>Supported the users of POS machine including training.</li>
+                            <li>Installed software, configured hardware at the location as assigned, and stood by for monitoring.</li>
+                            <li>Updated the POS terminal as required and performed technical tests to identify issues.</li>
+                            <li>Performed hardware and software troubleshooting of POS Machines.</li>
+                            <li>Analyzed technical problems and suggested elimination procedures to isolate the cause.</li>
+                            <li>Accepted and actioned tasks received through the Dispatching mobile application in a timely manner.</li>
+                            <li>Ensured the POS details in the support location matched and provided merchants with paper rolls when required.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-[#2c2c2c] rounded-lg p-6 shadow-md">
+                        <h3 class="text-xl font-bold text-white">IT Administrator / Sr. System Administrator</h3>
+                        <p class="text-sm text-[#d1d5db]">ECG Engineering Consultants Group | Doha, Qatar</p>
+                        <p class="text-xs text-[#9ca3af] mt-1">July 2008 - October 2022</p>
+                        <ul class="list-disc list-inside mt-4 text-[#c0c0c0] space-y-2">
+                            <li>Managed and maintained virtual servers using VMWARE Hypervisor.</li>
+                            <li>Responsible for regular backup procedures using Symantec Backup Exec and NetBackup.</li>
+                            <li>Managed and maintained Cisco switches and IP Phones.</li>
+                            <li>Installed and upgraded computer components and software, managed virtual servers, and integrated automation processes.</li>
+                            <li>Troubleshot hardware and software errors by running diagnostics.</li>
+                            <li>Managed KABA Machine System for company time attendance.</li>
+                            <li>Responsible for establishing the purchasing plan for software and hardware.</li>
+                            <li>Provided technical training to personnel.</li>
+                            <li>Responsible for all IT Quality Maintenance Systems.</li>
+                            <li>Provided documentation and technical specifications for IT staff.</li>
+                            <li>Led desktop and helpdesk support efforts.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-[#2c2c2c] rounded-lg p-6 shadow-md">
+                        <h3 class="text-xl font-bold text-white">IT Support / IT Administrator (Part Time)</h3>
+                        <p class="text-sm text-[#d1d5db]">Gulf Pear Hotel | Doha, Qatar</p>
+                        <p class="text-xs text-[#9ca3af] mt-1">September 2021 - March 2022</p>
+                        <ul class="list-disc list-inside mt-4 text-[#c0c0c0] space-y-2">
+                            <li>Provided escalation support for OS tickets.</li>
+                            <li>Monitored network devices such as access points and routers.</li>
+                            <li>Installed and upgraded computer components and software.</li>
+                            <li>Troubleshot hardware and software errors by running diagnostics.</li>
+                            <li>Provided remote escalation support for approved technology solutions.</li>
+                            <li>Advised and consulted on IT audits and managed hardware inventory.</li>
+                            <li>Provided 3rd party vendor management and escalation support.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-[#2c2c2c] rounded-lg p-6 shadow-md">
+                        <h3 class="text-xl font-bold text-white">IT Support/ Helpdesk Support</h3>
+                        <p class="text-sm text-[#d1d5db]">ANSI Information Technology | Manila, Philippines</p>
+                        <p class="text-xs text-[#9ca3af] mt-1">June 2007 - June 2008</p>
+                        <ul class="list-disc list-inside mt-4 text-[#c0c0c0] space-y-2">
+                            <li>Installed and configured computer hardware, software, systems, networks, printers, and scanners.</li>
+                            <li>Monitored and maintained computer systems and networks.</li>
+                            <li>Provided technical support across the company (on-site or over the phone).</li>
+                            <li>Repaired and replaced equipment as necessary.</li>
+                            <li>Installed/reinstalled the Operating system and applications for POS.</li>
+                            <li>Maintained database and system of POS using DbaMgr (SQL) for windows and Fox Pro for dos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section class="p-8 card-bg hover-effect">
+            <h2 class="section-title">AWARDS</h2>
+            <div class="bg-[#2c2c2c] rounded-lg p-6 shadow-md">
+                <h3 class="text-xl font-bold text-white">Certificate of Recognition</h3>
+                <p class="text-sm text-[#d1d5db] mt-1">Ideal Solution Top 1 out of 18 Technical Support Officer</p>
+                <p class="text-xs text-[#9ca3af] mt-1">December 26, 2022</p>
+                <p class="text-sm text-[#c0c0c0] mt-4">
+                    Recognition to Technical Support Officer who showed exemplary performance this FIFA World Cup Qatar 2022.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education and Trainings Section -->
+        <section class="p-8 card-bg hover-effect">
+            <h2 class="section-title">EDUCATION AND TRAININGS</h2>
+            <div class="space-y-6">
+                <div class="bg-[#2c2c2c] rounded-lg p-6 shadow-md">
+                    <h3 class="text-lg font-bold text-white">Bachelor of Science in Computer Science</h3>
+                    <p class="text-sm text-[#d1d5db] mt-1">Adamson University, Manila, Philippines</p>
+                    <p class="text-xs text-[#9ca3af] mt-1">2000-2007</p>
+                </div>
+                <div class="bg-[#2c2c2c] rounded-lg p-6 shadow-md">
+                    <h3 class="text-lg font-bold text-white">Google Cloud Associate Engineer</h3>
+                    <p class="text-sm text-[#d1d5db] mt-1">Google</p>
+                    <p class="text-xs text-[#9ca3af] mt-1">June - October 2022</p>
+                </div>
+                <div class="bg-[#2c2c2c] rounded-lg p-6 shadow-md">
+                    <h3 class="text-lg font-bold text-white">ITIL Foundation Certification V3 (training)</h3>
+                    <p class="text-sm text-[#d1d5db] mt-1">Udemy</p>
+                    <p class="text-xs text-[#9ca3af] mt-1">September 2019 - October 2019</p>
+                </div>
+                <div class="bg-[#2c2c2c] rounded-lg p-6 shadow-md">
+                    <h3 class="text-lg font-bold text-white">CompTIA A+ Certification 901 & 902 (training)</h3>
+                    <p class="text-sm text-[#d1d5db] mt-1">Udemy</p>
+                    <p class="text-xs text-[#9ca3af] mt-1">May 2019 & September 2019</p>
+                </div>
+                <div class="bg-[#2c2c2c] rounded-lg p-6 shadow-md">
+                    <h3 class="text-lg font-bold text-white">Cisco Certified Network Associate Routing & Switching (CCNA)</h3>
+                    <p class="text-sm text-[#d1d5db] mt-1">Family Computer, Doha Qatar</p>
+                    <p class="text-xs text-[#9ca3af] mt-1">October 2017-December 2017</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
