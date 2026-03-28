@@ -46,12 +46,6 @@ body {
 function toggle(id){
     document.getElementById(id).classList.toggle("hidden");
 }
-
-// IMAGE UPLOAD PREVIEW
-function loadImage(event) {
-    const image = document.getElementById('profilePreview');
-    image.src = URL.createObjectURL(event.target.files[0]);
-}
 </script>
 
 </head>
@@ -62,13 +56,13 @@ function loadImage(event) {
 <!-- HEADER -->
 <div class="card p-6 flex flex-col md:flex-row items-center gap-6">
 
-    <!-- PROFILE IMAGE -->
-    <div class="flex flex-col items-center">
-        <img id="profilePreview" src="https://placehold.co/150" 
-             class="rounded-full border-4 border-green-500 w-40 h-40 object-cover">
-
-        <input type="file" accept="image/*" onchange="loadImage(event)" class="mt-3 text-sm">
-    </div>
+    <!-- GITHUB PROFILE IMAGE -->
+    <img 
+        src="https://github.com/Rossberdido" 
+        onerror="this.src='https://placehold.co/150'"
+        class="rounded-full border-4 border-green-500 w-40 h-40 object-cover"
+        alt="Profile Photo"
+    >
 
     <!-- INFO -->
     <div class="text-center md:text-left">
@@ -92,7 +86,7 @@ function loadImage(event) {
 <div class="card p-6">
 <h2 class="section-title">Professional Summary</h2>
 <p>
-Senior IT Support Engineer / Systems Administrator with 16 years of experience managing enterprise IT infrastructures across Windows and Linux environments. Expertise in virtualization, cloud (Azure), identity management, and automation. Proven ability to optimize performance, reduce downtime, and align IT systems with business goals.
+Senior IT Support Engineer / Systems Administrator with 16 years of experience managing enterprise IT infrastructures across Windows and Linux environments. Expertise in virtualization, cloud (Azure), identity management, and automation.
 </p>
 </div>
 
@@ -117,102 +111,16 @@ Senior IT Support Engineer / Systems Administrator with 16 years of experience m
 <div class="card p-6">
 <h2 class="section-title">Experience</h2>
 
-<!-- ECG CURRENT -->
 <div class="mb-6">
 <h3 class="text-xl font-bold">Senior IT Administrator / System Administrator</h3>
 <p class="text-sm text-gray-400">ECG Engineering Consultants Group | Nov 2024 – Present</p>
-<button onclick="toggle('job1')">Show Details</button>
+<button onclick="toggle('job1')" class="btn mt-2">Show Details</button>
 
 <ul id="job1" class="hidden list-disc ml-6 mt-3 space-y-2">
-
-<li><b>Virtualization & Clusters:</b> Built HA clusters using VMware & Proxmox ensuring zero downtime</li>
-<li><b>Optimization:</b> Increased VM utilization by 55% through resource tuning</li>
-<li><b>Linux Automation:</b> Created server templates and automated deployments</li>
-
-<li><b>Azure / Identity:</b>
-<ul class="list-disc ml-6">
-<li>Configured Entra Connect synchronization</li>
-<li>Implemented Conditional Access & MFA</li>
-<li>Monitored risky sign-ins & secured accounts</li>
-</ul>
-</li>
-
-<li><b>Microsoft 365:</b> Managed Exchange Online, licenses, and permissions</li>
-
-<li><b>Power Automate:</b>
-<ul class="list-disc ml-6">
-<li>Automated ticketing system</li>
-<li>Reduced manual workload by 40%</li>
-<li>Configured SLA notifications</li>
-</ul>
-</li>
-
-<li><b>SharePoint ITSM:</b> Built helpdesk system with automation & reporting</li>
-
-<li><b>Snipe-IT Asset Management:</b>
-<ul class="list-disc ml-6">
-<li>Barcode tracking system</li>
-<li>Inventory audits & lifecycle management</li>
-</ul>
-</li>
-
-<li><b>RustDesk Server:</b> Deployed secure remote access infrastructure</li>
-
-<li><b>Backup Strategy:</b>
-<ul class="list-disc ml-6">
-<li>Managed Backup Exec & NetBackup</li>
-<li>Implemented tape rotation & DR strategy</li>
-</ul>
-</li>
-
-<li><b>Infrastructure Monitoring:</b> Capacity planning, IOPS monitoring</li>
-
-</ul>
-</div>
-
-<!-- ALI BIN ALI -->
-<div class="mb-6">
-<h3 class="text-xl font-bold">IT Support Engineer</h3>
-<p class="text-sm text-gray-400">Ali Bin Ali Holding | Mar 2023 – Nov 2024</p>
-<button onclick="toggle('job2')">Show Details</button>
-
-<ul id="job2" class="hidden list-disc ml-6 mt-3 space-y-2">
-<li>Managed 500+ devices using Microsoft Intune</li>
-<li>Handled hybrid AD & Azure identity</li>
-<li>Configured Entra Connect sync</li>
-<li>Deployed OS images (WDS) reducing setup time by 60%</li>
-<li>Maintained 95% SLA via Freshdesk</li>
-<li>Managed SCCM patching & deployments</li>
-<li>Provided Tier 2 technical support</li>
-</ul>
-</div>
-
-<!-- FIFA -->
-<div class="mb-6">
-<h3 class="text-xl font-bold">IT Support Officer (FIFA World Cup)</h3>
-<p class="text-sm text-gray-400">Ideal Solution | Oct 2022 – Dec 2022</p>
-<button onclick="toggle('job3')">Show Details</button>
-
-<ul id="job3" class="hidden list-disc ml-6 mt-3 space-y-2">
-<li>Ranked #1 Technical Support Engineer</li>
-<li>Managed POS systems across venues</li>
-<li>Resolved live network and hardware issues</li>
-</ul>
-</div>
-
-<!-- OLD ECG -->
-<div class="mb-6">
-<h3 class="text-xl font-bold">Senior System Administrator</h3>
-<p class="text-sm text-gray-400">ECG Engineering Consultants | 2008 – 2022</p>
-<button onclick="toggle('job4')">Show Details</button>
-
-<ul id="job4" class="hidden list-disc ml-6 mt-3 space-y-2">
-<li>Managed VMware & Hyper-V environments</li>
-<li>Handled enterprise backup systems</li>
-<li>Configured Cisco network infrastructure</li>
-<li>Managed Active Directory & GPO</li>
-<li>Led IT helpdesk team</li>
-<li>Handled procurement planning</li>
+<li>Built HA clusters using VMware & Proxmox</li>
+<li>Increased VM utilization by 55%</li>
+<li>Automated workflows using Power Automate</li>
+<li>Implemented Azure AD + MFA</li>
 </ul>
 </div>
 
